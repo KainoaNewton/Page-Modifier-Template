@@ -1,7 +1,7 @@
 ---
 description: 
 globs: 
-alwaysApply: true
+alwaysApply: false
 ---
 # Cursor Interaction Rules for Page Modifier Template
 
@@ -34,8 +34,6 @@ When the user says "Create a feature..." or "Add feature...", Cursor should ask:
 1. **Feature name** (display name, e.g., "Hide Ads")
 2. **Feature ID** (snake_case identifier, e.g., "hide_ads")
 3. **Description** (brief UI text)
-4. **Default state** (enabled or disabled)
-5. **Edits or behaviors** (CSS, DOM changes, event handlers)
 
 After receiving details, Cursor should:
 
@@ -104,3 +102,9 @@ After making code changes, Cursor should remind the user to reload:
 
 - **Chrome/Edge**: Navigate to `chrome://extensions/` and click **Reload**.
 - **Firefox**: Navigate to `about:debugging#/runtime/this-firefox` and click **Reload**.
+
+After making code changes, Cursor should remind the user to reload:
+
+- **Chrome/Edge**: Navigate to `chrome://extensions/` and click **Reload**.
+- **Firefox**: Navigate to `about:debugging#/runtime/this-firefox` and click **Reload**.
+
